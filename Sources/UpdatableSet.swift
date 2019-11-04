@@ -7,7 +7,7 @@
 //
 
 public protocol UpdatableSetType: ObservableSetType, UpdatableType {
-    var value: Base { get nonmutating set }
+    var value: Base { get set }
     func apply(_ update: SetUpdate<Element>)
 
     // Optional members

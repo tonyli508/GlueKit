@@ -21,7 +21,7 @@
 public protocol UpdatableArrayType: ObservableArrayType, UpdatableType {
 
     // Required members
-    var value: [Element] { get nonmutating set }
+    var value: [Element] { get set }
     func apply(_ update: ArrayUpdate<Element>)
     subscript(index: Int) -> Element { get nonmutating set }
     subscript(bounds: Range<Int>) -> ArraySlice<Element> { get nonmutating set }
